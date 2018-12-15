@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center>
+    <ion-row *ngFor="let item of traffic">
+        <ion-col *ngIf="item.color === 'green' && item.switch === 'on'">
+            <img src="./assets/imgs/2green.png" alt="">
+        </ion-col>
+        <ion-col *ngIf="item.color === 'green' && item.switch === 'off'">
+            <img src="./assets/imgs/1green.png" alt="">
+        </ion-col>
+
+        <ion-col *ngIf="item.color === 'yellow' && item.switch === 'on'">
+            <img src="./assets/imgs/4yellow.png" alt="">
+        </ion-col>
+        <ion-col *ngIf="item.color === 'yellow' && item.switch === 'off'">
+            <img src="./assets/imgs/3yellow.png" alt="">
+        </ion-col>
+
+        <ion-col *ngIf="item.color === 'red' && item.switch === 'on'">
+            <img src="./assets/imgs/6red.png" alt="">
+        </ion-col>
+        <ion-col *ngIf="item.color === 'red' && item.switch === 'off'">
+            <img src="./assets/imgs/5red.png" alt="">
+        </ion-col>
+    </ion-row>
+
+</ion-content>
